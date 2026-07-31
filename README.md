@@ -18,9 +18,9 @@ Below is a complete log of all modifications made to the base touchHLE engine to
 - **The Bug**: The game frequently creates audio queues for short sound effects (like battle attacks). The emulator was failing to delete the underlying OpenAL audio sources when these queues were disposed of. After a certain number of battles, the emulator would hit an `AL_OUT_OF_MEMORY` limit and crash abruptly.
 - **The Fix**: Added missing `context.DeleteSources` cleanup logic to `AudioQueueDispose` inside `src/frameworks/audio_toolbox/audio_queue.rs`, completely eliminating the audio resource leak.
 
-### 4. Cheat Engine Purge
-- Removed unstable memory injection and cheat hooks that were causing widespread memory corruption and arbitrary panics.
-- Maintained the built-in speedhack functionality to allow fast-forwarding gameplay safely without compromising stability.
+### 4. Speedhack
+- Added a speedhack that user can change to allow fast-forwarding gameplay safely without compromising stability.
+-  CONTROLS  - "]" SPEED UP  |   "[" SPEED DOWN
 
 ### 5. Crash Log Flushing Patch
 - Upgraded the emulator's internal logging macro (`src/log.rs`) to instantly flush output to disk. This ensures that if the emulator ever encounters a hard crash in the future, the true error message is guaranteed to be saved in `touchHLE_log.txt` before the window closes.
