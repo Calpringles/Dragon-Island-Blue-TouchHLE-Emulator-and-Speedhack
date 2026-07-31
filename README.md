@@ -19,9 +19,9 @@ Below is a complete log of all modifications made to the base touchHLE engine to
 - **The Bug**: The game frequently creates audio queues for short sound effects (like battle attacks). The emulator was failing to delete the underlying OpenAL audio sources when these queues were disposed of. After a certain number of battles, the emulator would hit an `AL_OUT_OF_MEMORY` limit and crash abruptly.
 - **The Fix**: Added missing `context.DeleteSources` cleanup logic to `AudioQueueDispose` inside `src/frameworks/audio_toolbox/audio_queue.rs`, completely eliminating the audio resource leak.
 
-### 4. Any Monster Capture Mod (Breeder Bypass)
-- **The Mod**: In this version, you can catch other breeders' monsters! 
-- **The Hack**: Injected a targeted hook into the emulator's `objc_msgSend` core message dispatcher. The emulator aggressively intercepts the game's internal `breeder` setters, tricking the game logic and UI into treating breeder encounters as wild battles, which un-hides the capture buttons and allows you to capture any monster!
+### 4. Any Monster Capture Mod (Breeder & Totem Bypass)
+- **The Mod**: In this version, you can catch other breeders' monsters AND Spirit Totems! 
+- **The Hack**: Injected a targeted hook into the emulator's `objc_msgSend` core message dispatcher. The emulator aggressively intercepts the game's internal `breeder` setters, tricking the game logic and UI into treating breeder encounters as wild battles, which un-hides the capture buttons. It also intercepts string comparisons for the `"Summon"` category, forcefully returning false so that Spirit Totems (Time, Resistance, Fire, Fear, etc.) are treated as `"Normal"` monsters, allowing them to be captured with their natural odds!
 
 ### 5. Speedhack
 - Added a speedhack that user can change to allow fast-forwarding gameplay safely without compromising stability.
