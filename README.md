@@ -25,6 +25,9 @@ Below is a complete log of all modifications made to the base touchHLE engine to
 
 ### 5. Crash Log Flushing Patch
 - Upgraded the emulator's internal logging macro (`src/log.rs`) to instantly flush output to disk. This ensures that if the emulator ever encounters a hard crash in the future, the true error message is guaranteed to be saved in `touchHLE_log.txt` before the window closes.
+### 6. Cave Rendering Fix
+- **The Bug**: Deeper caves (like Pirate's Cave and Underground River) would fail to load their background sprites and render black screens when generating complex room layouts.
+- **The Fix**: Modified the binary map configuration files to dynamically switch these bugged generic `Cave` archetypes to stable `Water` or `Dungeon` themes that have complete texture atlases.
 
 ## Setup & Usage
 
