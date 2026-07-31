@@ -6,10 +6,11 @@ This repository contains a specially optimized and patched build of the [touchHL
 
 Below is a complete log of all modifications made to the base touchHLE engine to create this build:
 
-### 1. Resolution & Window Upscaling
+### 1. Resolution, Window Upscaling, Unlocked Frame Rate
 - Implemented a **1.5x rendering scale hack**.
 - The emulator now automatically opens with a larger, upscaled window, removing the need for you to manually resize the game window every time you launch the emulator.
-
+- The emulator now has an unlocked frame rate allowing for smoother gameplay with no impact on runtime.
+  
 ### 2. Objective-C Null Pointer Safety Patch
 - **The Bug**: The game would occasionally crash the emulator when trying to read or write properties on `nil` (non-existent) objects, particularly during combat attack animations.
 - **The Fix**: Patched `objc_getProperty` and `objc_setProperty` inside the touchHLE runtime (`src/objc/properties.rs`) to safely detect and ignore `nil` objects without panicking, preventing random mid-battle crashes.
