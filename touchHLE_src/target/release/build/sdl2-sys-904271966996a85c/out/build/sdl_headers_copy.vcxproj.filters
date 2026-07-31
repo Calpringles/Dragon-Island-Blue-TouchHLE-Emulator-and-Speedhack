@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_assert.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_atomic.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_audio.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_bits.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_blendmode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_clipboard.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_copying.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_cpuinfo.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_egl.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_endian.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_error.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_events.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_filesystem.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_gamecontroller.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_gesture.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_guid.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_haptic.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_hidapi.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_hints.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_joystick.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_keyboard.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_keycode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_loadso.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_locale.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_log.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_main.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_messagebox.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_metal.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_misc.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_mouse.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_mutex.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_name.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengl.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengl_glext.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2ext.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2platform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_khrplatform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_pixels.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_platform.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_power.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_quit.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_rect.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_render.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_rwops.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_scancode.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_sensor.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_shape.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_stdinc.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_surface.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_system.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_syswm.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_assert.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_common.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_compare.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_crc32.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_font.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_fuzzer.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_harness.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_images.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_log.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_md5.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_memory.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_random.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_thread.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_timer.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_touch.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_types.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_version.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_video.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_vulkan.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\begin_code.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\close_code.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4b6ad08e63861cc5fa0e038c68787b95\sdl_headers_copy.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\sdl_headers_copy" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B352AA6D-FDD5-37C0-8AB1-8375037637EF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93F9FF4C-0C4C-34C4-B77F-7E9ECA75CB8B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>SDL2-static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL2-static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SDL2-static</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include-config-release;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Brepro -Brepro</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization></Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);__FLTUSED__;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=26;SDL_BUILD_MICRO_VERSION=4;SDL_STATIC_LIB;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;__FLTUSED__;SDL_BUILD_MAJOR_VERSION=2;SDL_BUILD_MINOR_VERSION=26;SDL_BUILD_MICRO_VERSION=4;SDL_STATIC_LIB;USING_GENERATED_CONFIG_H;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include-config-release;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include-config-release;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\khronos;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL "-BC:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build" --check-stamp-file "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckOBJCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\SDL2.spec.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\SDL2Config.cmake.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\CheckCPUArchitecture.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\macros.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\sdlchecks.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake_uninstall.cmake.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_config.h.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_revision.h.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\sdl2-config.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\sdl2.pc.in;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeSystem.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\SDL_config.h.intermediate;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_assert.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_dataqueue.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_error.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_guid.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_hints.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_list.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_log.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\SDL_utils.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\atomic\SDL_atomic.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\atomic\SDL_spinlock.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_audio.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_audiocvt.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_audiodev.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_audiotypecvt.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_mixer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\SDL_wave.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\cpuinfo\SDL_cpuinfo.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\dynapi\SDL_dynapi.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_clipboardevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_displayevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_dropevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_events.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_gesture.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_keyboard.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_keysym_to_scancode.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_mouse.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_quit.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_scancode_tables.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_touch.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\SDL_windowevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\events\imKStoUCS.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\file\SDL_rwops.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\haptic\SDL_haptic.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\hidapi\SDL_hidapi.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\SDL_gamecontroller.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\SDL_joystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\controller_type.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_atan2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_exp.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_fmod.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_log.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_log10.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_pow.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_rem_pio2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\e_sqrt.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\k_cos.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\k_rem_pio2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\k_sin.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\k_tan.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_atan.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_copysign.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_cos.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_fabs.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_floor.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_scalbn.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_sin.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\libm\s_tan.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\locale\SDL_locale.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\misc\SDL_url.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\power\SDL_power.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\SDL_d3dmath.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\SDL_render.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\SDL_yuv_sw.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d\SDL_render_d3d.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d\SDL_shaders_d3d.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d11\SDL_render_d3d11.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d11\SDL_shaders_d3d11.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d12\SDL_render_d3d12.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\direct3d12\SDL_shaders_d3d12.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\opengl\SDL_render_gl.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\opengl\SDL_shaders_gl.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\opengles\SDL_render_gles.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\opengles2\SDL_render_gles2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\opengles2\SDL_shaders_gles2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\ps2\SDL_render_ps2.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\psp\SDL_render_psp.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_blendfillrect.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_blendline.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_blendpoint.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_drawline.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_drawpoint.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_render_sw.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_rotate.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\software\SDL_triangle.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\vitagxm\SDL_render_vita_gxm.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\vitagxm\SDL_render_vita_gxm_memory.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\render\vitagxm\SDL_render_vita_gxm_tools.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\sensor\SDL_sensor.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_crc16.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_crc32.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_getenv.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_iconv.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_malloc.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_mslibc.c">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalOptions) /GL-</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_qsort.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_stdlib.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_string.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\stdlib\SDL_strtokr.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\SDL_thread.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\timer\SDL_timer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_RLEaccel.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_0.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_1.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_A.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_N.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_auto.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_copy.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_blit_slow.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_bmp.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_clipboard.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_egl.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_fillrect.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_pixels.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_rect.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_shape.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_stretch.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_surface.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_video.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_vulkan_utils.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\SDL_yuv.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\yuv2rgb\yuv_rgb.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\dummy\SDL_dummyaudio.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\disk\SDL_diskaudio.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\virtual\SDL_virtualjoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\dummy\SDL_nullevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\dummy\SDL_nullframebuffer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\dummy\SDL_nullvideo.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\offscreen\SDL_offscreenevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\offscreen\SDL_offscreenframebuffer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\offscreen\SDL_offscreenopengles.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\offscreen\SDL_offscreenvideo.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\offscreen\SDL_offscreenwindow.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\core\windows\SDL_hid.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\core\windows\SDL_immdevice.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\core\windows\SDL_windows.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\core\windows\SDL_xinput.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\misc\windows\SDL_sysurl.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\winmm\SDL_winmm.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\directsound\SDL_directsound.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\wasapi\SDL_wasapi.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\audio\wasapi\SDL_wasapi_win32.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsclipboard.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsevents.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsframebuffer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowskeyboard.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsmessagebox.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsmodes.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsmouse.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsopengl.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsopengles.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsshape.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsvideo.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowsvulkan.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\video\windows\SDL_windowswindow.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\generic\SDL_syscond.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\windows\SDL_syscond_cv.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\windows\SDL_sysmutex.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\windows\SDL_syssem.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\windows\SDL_systhread.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\thread\windows\SDL_systls.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\sensor\windows\SDL_windowssensor.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\power\windows\SDL_syspower.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\locale\windows\SDL_syslocale.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\filesystem\windows\SDL_sysfilesystem.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\timer\windows\SDL_systimer.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\loadso\windows\SDL_sysloadso.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_combined.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_gamecube.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_luna.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_ps3.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_ps4.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_ps5.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_rumble.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_shield.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_stadia.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_steam.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_switch.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_wii.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_xbox360.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_xbox360w.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapi_xboxone.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\hidapi\SDL_hidapijoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\windows\SDL_dinputjoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\windows\SDL_rawinputjoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\windows\SDL_windows_gaming_input.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\windows\SDL_windowsjoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\joystick\windows\SDL_xinputjoystick.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\haptic\windows\SDL_dinputhaptic.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\haptic\windows\SDL_windowshaptic.c" />
+    <ClCompile Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\src\haptic\windows\SDL_xinputhaptic.c" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\ZERO_CHECK.vcxproj">
+      <Project>{7B60983E-6EFE-3279-93CB-01BC3B795891}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\sdl_headers_copy.vcxproj">
+      <Project>{C3A55F60-141F-37BA-9E99-1DDF9F4A88C1}</Project>
+      <Name>sdl_headers_copy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

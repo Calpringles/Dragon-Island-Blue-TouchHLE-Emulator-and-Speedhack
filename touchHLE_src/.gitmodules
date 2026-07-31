@@ -1,0 +1,6 @@
+[submodule "vendor/Native_SDK"]
+	path = vendor/Native_SDK
+	url = https://github.com/powervr-graphics/Native_SDK.git
+[submodule "vendor/openal-soft"]
+	path = vendor/openal-soft
+	url = https://github.com/kcat/openal-soft.git

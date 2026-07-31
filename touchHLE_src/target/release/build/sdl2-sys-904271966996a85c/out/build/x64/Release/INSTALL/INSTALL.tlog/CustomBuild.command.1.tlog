@@ -1,0 +1,10 @@
+^C:\USERS\CALLU\DESKTOP\DIB REVIVAL\LATEST WINDOWS DIB VERSION\TOUCHHLE_SRC\TARGET\RELEASE\BUILD\SDL2-SYS-904271966996A85C\OUT\BUILD\CMAKEFILES\4B6AD08E63861CC5FA0E038C68787B95\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

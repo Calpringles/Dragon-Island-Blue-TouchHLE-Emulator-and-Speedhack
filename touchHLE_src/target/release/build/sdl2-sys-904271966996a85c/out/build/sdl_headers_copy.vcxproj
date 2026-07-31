@@ -1,0 +1,1406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C3A55F60-141F-37BA-9E99-1DDF9F4A88C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sdl_headers_copy</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_assert.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_assert.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_assert.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_assert.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_assert.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_assert.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_atomic.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_atomic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_atomic.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_atomic.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_atomic.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_atomic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_audio.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_audio.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_audio.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_audio.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_audio.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_audio.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_bits.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_bits.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_bits.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_bits.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_bits.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_bits.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_blendmode.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_blendmode.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_blendmode.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_blendmode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_blendmode.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_blendmode.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_clipboard.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_clipboard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_clipboard.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_clipboard.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_clipboard.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_clipboard.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_copying.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_copying.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_copying.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_copying.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_copying.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_copying.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_cpuinfo.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_cpuinfo.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_cpuinfo.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_cpuinfo.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_cpuinfo.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_cpuinfo.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_egl.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_egl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_egl.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_egl.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_egl.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_egl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_endian.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_endian.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_endian.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_endian.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_endian.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_endian.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_error.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_error.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_error.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_error.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_error.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_error.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_events.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_events.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_events.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_events.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_events.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_events.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_filesystem.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_filesystem.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_filesystem.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_filesystem.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_filesystem.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_filesystem.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_gamecontroller.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_gamecontroller.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_gamecontroller.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_gamecontroller.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_gamecontroller.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_gamecontroller.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_gesture.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_gesture.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_gesture.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_gesture.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_gesture.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_gesture.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_guid.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_guid.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_guid.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_guid.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_guid.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_guid.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_haptic.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_haptic.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_haptic.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_haptic.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_haptic.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_haptic.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_hidapi.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_hidapi.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_hidapi.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_hidapi.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_hidapi.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_hidapi.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_hints.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_hints.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_hints.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_hints.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_hints.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_hints.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_joystick.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_joystick.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_joystick.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_joystick.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_joystick.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_joystick.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_keyboard.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_keyboard.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_keyboard.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_keyboard.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_keyboard.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_keyboard.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_keycode.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_keycode.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_keycode.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_keycode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_keycode.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_keycode.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_loadso.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_loadso.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_loadso.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_loadso.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_loadso.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_loadso.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_locale.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_locale.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_locale.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_locale.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_locale.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_locale.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_log.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_log.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_log.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_log.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_log.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_main.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_main.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_main.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_main.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_main.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_main.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_messagebox.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_messagebox.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_messagebox.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_messagebox.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_messagebox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_messagebox.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_metal.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_metal.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_metal.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_metal.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_metal.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_metal.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_misc.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_misc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_misc.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_misc.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_misc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_misc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_mouse.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_mouse.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_mouse.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_mouse.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_mouse.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_mouse.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_mutex.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_mutex.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_mutex.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_mutex.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_mutex.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_mutex.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_name.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_name.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_name.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_name.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_name.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_name.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengl.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengl.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengl.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengl.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengl.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengl.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengl_glext.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengl_glext.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengl_glext.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengl_glext.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengl_glext.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengl_glext.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles2.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles2.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles2.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles2_gl2.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles2_gl2.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles2_gl2.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles2_gl2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2ext.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles2_gl2ext.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles2_gl2ext.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles2_gl2ext.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles2_gl2ext.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2ext.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_gl2platform.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles2_gl2platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles2_gl2platform.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles2_gl2platform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles2_gl2platform.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_opengles2_khrplatform.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_opengles2_khrplatform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_opengles2_khrplatform.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_opengles2_khrplatform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_opengles2_khrplatform.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_khrplatform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_pixels.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_pixels.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_pixels.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_pixels.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_pixels.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_pixels.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_platform.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_platform.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_platform.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_platform.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_platform.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_platform.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_power.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_power.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_power.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_power.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_power.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_power.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_quit.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_quit.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_quit.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_quit.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_quit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_quit.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_rect.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_rect.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_rect.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_rect.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_rect.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_rect.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_render.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_render.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_render.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_render.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_render.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_render.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_rwops.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_rwops.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_rwops.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_rwops.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_rwops.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_rwops.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_scancode.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_scancode.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_scancode.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_scancode.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_scancode.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_scancode.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_sensor.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_sensor.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_sensor.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_sensor.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_sensor.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_sensor.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_shape.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_shape.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_shape.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_shape.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_shape.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_shape.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_stdinc.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_stdinc.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_stdinc.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_stdinc.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_stdinc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_stdinc.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_surface.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_surface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_surface.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_surface.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_surface.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_surface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_system.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_system.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_system.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_system.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_system.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_system.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_syswm.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_syswm.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_syswm.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_syswm.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_syswm.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_syswm.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_assert.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_assert.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_assert.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_assert.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_assert.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_assert.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_common.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_common.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_common.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_common.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_common.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_common.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_compare.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_compare.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_compare.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_compare.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_compare.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_compare.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_crc32.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_crc32.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_crc32.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_crc32.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_crc32.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_crc32.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_font.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_font.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_font.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_font.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_font.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_font.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_fuzzer.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_fuzzer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_fuzzer.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_fuzzer.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_fuzzer.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_fuzzer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_harness.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_harness.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_harness.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_harness.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_harness.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_harness.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_images.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_images.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_images.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_images.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_images.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_images.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_log.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_log.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_log.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_log.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_log.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_log.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_md5.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_md5.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_md5.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_md5.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_md5.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_md5.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_memory.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_memory.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_memory.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_memory.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_memory.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_memory.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_test_random.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_test_random.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_test_random.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_test_random.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_test_random.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_random.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_thread.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_thread.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_thread.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_thread.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_thread.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_thread.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_timer.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_timer.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_timer.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_timer.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_timer.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_timer.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_touch.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_touch.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_touch.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_touch.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_touch.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_touch.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_types.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_types.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_types.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_types.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_types.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_types.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_version.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_version.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_version.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_version.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_version.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_version.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_video.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_video.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_video.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_video.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_video.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_video.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\SDL_vulkan.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/SDL_vulkan.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/SDL_vulkan.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/SDL_vulkan.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_vulkan.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_vulkan.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\begin_code.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/begin_code.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/begin_code.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/begin_code.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\begin_code.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\begin_code.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\100cb65e906499033543c4cc383fc3f7\close_code.h.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating include/close_code.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/include/close_code.h "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/include/close_code.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\close_code.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\close_code.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4b6ad08e63861cc5fa0e038c68787b95\sdl_headers_copy.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_assert.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_atomic.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_audio.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_bits.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_blendmode.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_clipboard.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_copying.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_cpuinfo.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_egl.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_endian.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_error.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_events.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_filesystem.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_gamecontroller.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_gesture.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_guid.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_haptic.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_hidapi.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_hints.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_joystick.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_keyboard.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_keycode.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_loadso.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_locale.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_log.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_main.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_messagebox.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_metal.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_misc.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_mouse.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_mutex.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_name.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengl.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengl_glext.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2ext.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_gl2platform.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_opengles2_khrplatform.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_pixels.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_platform.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_power.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_quit.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_rect.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_render.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_rwops.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_scancode.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_sensor.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_shape.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_stdinc.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_surface.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_system.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_syswm.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_assert.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_common.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_compare.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_crc32.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_font.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_fuzzer.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_harness.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_images.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_log.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_md5.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_memory.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_test_random.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_thread.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_timer.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_touch.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_types.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_version.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_video.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\SDL_vulkan.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\begin_code.h;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\include\close_code.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\sdl_headers_copy</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/callu/.cargo/git/checkouts/rust-sdl2-ea3c374813cf7148/b67f98f/sdl2-sys/SDL "-BC:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build" --check-stamp-file "C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.4\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineCompilerSupport.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckIncludeFiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLanguage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckOBJCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckStructHasMember.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Diab-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\PellesC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Renesas-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-4.4\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CMakeInspectCXXLinker.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\CheckSourceRuns.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-4.4\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\SDL2.spec.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\SDL2Config.cmake.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\CheckCPUArchitecture.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\macros.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake\sdlchecks.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\cmake_uninstall.cmake.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_config.h.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\include\SDL_revision.h.cmake;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\sdl2-config.in;C:\Users\callu\.cargo\git\checkouts\rust-sdl2-ea3c374813cf7148\b67f98f\sdl2-sys\SDL\sdl2.pc.in;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeCCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeCXXCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeRCCompiler.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\4.4.0\CMakeSystem.cmake;C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\SDL_config.h.intermediate;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\CMakeFiles\sdl_headers_copy">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\callu\Desktop\DIB REVIVAL\Latest WINDOWS DIB version\touchHLE_src\target\release\build\sdl2-sys-904271966996a85c\out\build\ZERO_CHECK.vcxproj">
+      <Project>{7B60983E-6EFE-3279-93CB-01BC3B795891}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

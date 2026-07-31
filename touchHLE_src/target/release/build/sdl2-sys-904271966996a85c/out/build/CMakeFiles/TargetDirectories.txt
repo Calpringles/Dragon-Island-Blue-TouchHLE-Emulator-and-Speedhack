@@ -1,0 +1,8 @@
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/sdl_headers_copy.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/SDL2main.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/SDL2-static.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/SDL2_test.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/uninstall.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/INSTALL.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out/build/CMakeFiles/ZERO_CHECK.dir

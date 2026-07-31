@@ -1,0 +1,14 @@
+# sdl pkg-config source file
+
+prefix=C:/Users/callu/Desktop/DIB REVIVAL/Latest WINDOWS DIB version/touchHLE_src/target/release/build/sdl2-sys-904271966996a85c/out
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: sdl2
+Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Version: 2.26.4
+Requires:
+Conflicts:
+Libs: -L${libdir}   -lSDL2-static    -lSDL2-static  -luser32 -lgdi32 -lwinmm -limm32 -lole32 -loleaut32 -lversion -luuid -ladvapi32 -lsetupapi -lshell32 -ldinput8
+Cflags: -I${includedir} -I${includedir}/SDL2 

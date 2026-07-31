@@ -1,0 +1,62 @@
+HOW TO BRING YOUR OLD SAVE OVER TO THIS BUILD
+==============================================
+
+This folder is a fresh copy of touchHLE, so it starts with no save data of
+its own. Your existing Dragon Island Blue progress is sitting in your OLD
+touchHLE folder and needs to be copied across manually — touchHLE doesn't
+do this automatically.
+
+Where your old save lives:
+
+    F:\DIB\touchHLE_sandbox\jp.ne.goo.game.dragonislandblue
+
+("jp.ne.goo.game.dragonislandblue" is just the game's internal ID — that's
+normal, it's not a mistake.)
+
+Where it needs to go in THIS folder:
+
+    touchHLE_sandbox\jp.ne.goo.game.dragonislandblue
+
+(right next to touchHLE.exe in this same folder — create the
+"touchHLE_sandbox" folder yourself if it isn't there yet, since this is a
+brand new copy and hasn't made one.)
+
+
+STEPS
+-----
+
+1. Make sure touchHLE.exe in THIS folder has been run and closed at least
+   once (so Windows/touchHLE has nothing open that could lock the files).
+
+2. Open a File Explorer window at:
+       F:\DIB\touchHLE_sandbox\jp.ne.goo.game.dragonislandblue
+
+3. Copy the WHOLE "jp.ne.goo.game.dragonislandblue" folder (not just its
+   contents).
+
+4. Paste it into this folder's "touchHLE_sandbox" folder (create
+   "touchHLE_sandbox" first if it doesn't exist yet).
+
+   End result should look like:
+       <this folder>\touchHLE_sandbox\jp.ne.goo.game.dragonislandblue\Documents\...
+       <this folder>\touchHLE_sandbox\jp.ne.goo.game.dragonislandblue\Library\...
+
+5. Launch touchHLE.exe from this folder and open Dragon Island Blue — your
+   progress should be exactly where you left it.
+
+
+A COUPLE OF SAFETY NOTES
+-------------------------
+
+- This only COPIES your save — it doesn't touch or move your old
+  "F:\DIB\touchHLE_sandbox" folder, so your old install keeps working too if
+  you ever want to go back to it.
+
+- If you play in both folders afterwards, they will NOT stay in sync with
+  each other — whichever one you play in last is the one with your latest
+  progress. Pick one folder to actually play in going forward to avoid
+  confusing yourself about which save is current.
+
+- Before overwriting an existing save in this folder, consider making a
+  backup copy of the "jp.ne.goo.game.dragonislandblue" folder somewhere safe
+  first (just copy-paste it), in case anything goes wrong.

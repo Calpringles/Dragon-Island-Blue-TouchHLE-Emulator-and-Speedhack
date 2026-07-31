@@ -1,0 +1,136 @@
+HOW TO PLAY DRAGON ISLAND BLUE ON WINDOWS
+==========================================
+
+This lets you play the old iPhone game Dragon Island Blue on a Windows PC.
+
+It takes about five minutes. You do not need to be technical — just follow
+the steps in order.
+
+You need two things:
+  * this folder (you already have it)
+  * the game file, which ends in ".ipa"
+
+Any reasonably modern Windows 10 or 11 PC will work.
+
+This is a Windows build of the same modified touchHLE used on Mac, with the
+same extra compatibility fixes needed to make this particular game work. The
+plain touchHLE you can download from touchhle.org will NOT work for this
+game — it crashes partway through loading. Use the touchHLE.exe in this
+folder instead.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+STEP 1 — Put the folder somewhere permanent
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Move this whole folder out of your Downloads folder and somewhere you won't
+accidentally delete it — for example directly on your C: drive, or in
+Documents.
+
+(If you skip this it still works, but the folder may vanish next time you
+tidy your Downloads.)
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+STEP 2 — Open it the first time (the fiddly bit — read this one carefully)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The first time you open touchHLE.exe, Windows WILL show a blue warning
+screen saying "Windows protected your PC". This is normal and expected. It
+happens to every app that wasn't downloaded from the Microsoft Store.
+Nothing is wrong.
+
+Here is how to get past it.
+
+  1. Double-click touchHLE.exe. A blue screen appears saying "Windows
+     protected your PC".
+
+  2. Click the small text that says "More info".
+
+  3. A new button appears: "Run anyway". Click it.
+
+The app now opens. You will never have to do any of this again for this
+copy of touchHLE.exe.
+
+  If Windows instead just silently refuses to open the file, or your
+  antivirus quarantines it, that's your antivirus being overly cautious
+  about an app it doesn't recognise. You may need to restore it from
+  quarantine or add an exception — check your antivirus's own instructions
+  for that.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+STEP 3 — Give it the game
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+When it opens, you will see a mostly empty screen saying "No apps found in
+the .\touchHLE_apps directory". That is correct — you haven't added the
+game yet.
+
+  1. Click the "File manager" button at the bottom of the window.
+
+  2. A File Explorer window opens, and touchHLE closes itself. This is
+     deliberate.
+
+  3. In that window, double-click the folder called "touchHLE_apps".
+
+  4. Drag your game file (the one ending in ".ipa") into that folder. Make
+     sure it goes directly inside "touchHLE_apps", not inside another
+     folder within it.
+
+  5. Open touchHLE.exe again. The game is now shown as an icon. Click it,
+     and it starts.
+
+That's it. From now on, playing is just: open touchHLE.exe, click the game.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+PLAYING
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+The mouse is your finger. Click where you would tap. Click and drag where
+you would swipe.
+
+To make the window bigger, drag any edge or corner of it. The game was made
+for a phone screen, so it will look softer the bigger you make it. That is
+the game's real resolution, not a setting you can turn up.
+
+To stop playing, close the window.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+IF SOMETHING GOES WRONG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+"touchHLE crashed with an error about an unimplemented function."
+    This is the exact problem this Windows build was made to fix. Make sure
+    you're running the touchHLE.exe from THIS folder, and not one you
+    downloaded separately from touchhle.org — the official version doesn't
+    have the fix for this game.
+
+"The game isn't showing up after I copied it in."
+    Make sure the file ends in ".ipa", and that it is directly inside the
+    "touchHLE_apps" folder rather than inside another folder within it.
+    Then close touchHLE completely and open it again.
+
+"Where are my saves?"
+    In the same folder the "File manager" button opens, inside a folder
+    called "touchHLE_sandbox". Copy that folder somewhere safe if you want
+    to back up your progress.
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+This is a modified version of touchHLE (https://touchhle.org), a free
+open-source iPhone emulator, with extra fixes for this particular game. It
+is free software under the Mozilla Public License 2.0. The game itself is
+not included and is not part of this package.
+
+The Mozilla Public License requires that anyone given this program can also
+get its source code. The complete source for this build is in the file
+"Source code (MPL licence).zip" next to this one. You do not need it to
+play, and you can ignore it. The original, unmodified project lives at
+https://github.com/touchHLE/touchHLE.
+
+If you pass this package on to anyone else, please keep that source archive
+with it.

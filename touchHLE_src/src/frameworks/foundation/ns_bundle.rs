@@ -1,0 +1,483 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+//! `NSBundle`.
+
+use super::{ns_string, NSNotFound, NSRange, NSUInteger};
+use crate::bundle::Bundle;
+use crate::frameworks::core_foundation::cf_bundle::{
+    CFBundleCopyBundleLocalizations, CFBundleCopyPreferredLocalizationsFromArray,
+};
+use crate::frameworks::foundation::ns_string::{
+    from_rust_string, to_rust_string, NSUTF8StringEncoding,
+};
+use crate::mem::{ConstVoidPtr, MutPtr, Ptr};
+use crate::objc::{
+    autorelease, id, msg, msg_class, nil, objc_classes, release, retain, ClassExports, HostObject,
+    NSZonePtr,
+};
+use crate::Environment;
+use std::collections::{HashMap, HashSet};
+
+// Should be ISO 639-1 (or ISO 639-2) compliant
+// Legacy projects use language names while newer ones use language code lprojs
+// TODO: complete this list or use some crate for mapping
+const LANG_ID_TO_LANG_PROJ: &[(&str, &[&str])] = &[
+    ("da", &["Danish.lproj", "da.lproj"]),
+    ("nl", &["Dutch.lproj", "nl.lproj"]),
+    ("en", &["English.lproj", "en.lproj"]),
+    ("fi", &["Finnish.lproj", "fi.lproj"]),
+    ("fr", &["French.lproj", "fr.lproj"]),
+    ("de", &["German.lproj", "de.lproj"]),
+    ("it", &["Italian.lproj", "it.lproj"]),
+    ("ja", &["Japanese.lproj", "ja.lproj"]),
+    ("no", &["Norwegian.lproj", "no.lproj"]),
+    ("es", &["Spanish.lproj", "es.lproj"]),
+    ("sv", &["Swedish.lproj", "sv.lproj"]),
+];
+
+#[derive(Default)]
+pub struct State {
+    main_bundle: Option<id>,
+    localization_tables: HashMap<id, id>, // NSString* to NSDictionary*
+}
+
+pub struct NSBundleHostObject {
+    /// If this is [None], this is the main bundle's NSBundle instance and the
+    /// [Bundle] is stored in [crate::Environment], not here.
+    pub bundle: Option<Bundle>,
+    /// NSString with bundle path.
+    bundle_path: id,
+    /// NSString with bundle identifier.
+    bundle_identifier: id,
+    /// NSURL with bundle path. [None] if not created yet.
+    bundle_url: Option<id>,
+    /// `NSDictionary*` for the `Info.plist` content. [None] if not created yet.
+    info_dictionary: Option<id>,
+}
+impl HostObject for NSBundleHostObject {}
+
+pub const CLASSES: ClassExports = objc_classes! {
+
+(env, this, _cmd);
+
+@implementation NSBundle: NSObject
+
++ (id)mainBundle {
+    if let Some(bundle) = env.framework_state.foundation.ns_bundle.main_bundle {
+        bundle
+    } else {
+        let new = msg_class![env; _touchHLE_NSBundle_Static alloc];
+        env.framework_state.foundation.ns_bundle.main_bundle = Some(new);
+        new
+   }
+}
+
++ (id)preferredLocalizationsFromArray:(id)localizations_array { // NSArray<NSString *> *
+    let preferredLocalizations = CFBundleCopyPreferredLocalizationsFromArray(env, localizations_array);
+    autorelease(env, preferredLocalizations)
+}
+
+- (())dealloc {
+    let &NSBundleHostObject {
+        bundle: _,
+        bundle_path: _, // FIXME?
+        bundle_identifier: _, // FIXME?
+        bundle_url,
+        info_dictionary,
+    } = env.objc.borrow(this);
+    if let Some(bundle_url) = bundle_url {
+        release(env, bundle_url);
+    }
+    if let Some(info_dictionary) = info_dictionary {
+        release(env, info_dictionary);
+    }
+    env.objc.dealloc_object(this, &mut env.mem)
+}
+
+- (id)bundlePath {
+    env.objc.borrow::<NSBundleHostObject>(this).bundle_path
+}
+- (id)bundleIdentifier {
+    env.objc.borrow::<NSBundleHostObject>(this).bundle_identifier
+}
+- (id)bundleURL {
+    if let Some(url) = env.objc.borrow::<NSBundleHostObject>(this).bundle_url {
+        url
+    } else {
+        let bundle_path: id = msg![env; this bundlePath];
+        let new: id = msg_class![env; NSURL alloc];
+        let new: id = msg![env; new initFileURLWithPath:bundle_path];
+        env.objc.borrow_mut::<NSBundleHostObject>(this).bundle_url = Some(new);
+        new
+    }
+}
+
+- (id)loadNibNamed:(id)name // NSString*
+             owner:(id)owner
+           options:(id)options { // NSDictionary<UINibOptionsKey, id> *
+    if options != nil {
+        let options_count: NSUInteger = msg![env; options count];
+        // TODO: support options
+        assert_eq!(options_count, 0);
+    }
+
+    let nib : id = msg_class![env; UINib nibWithNibName:name bundle:this];
+    msg![env; nib instantiateWithOwner:owner options:nil]
+}
+
+- (id)resourcePath {
+    // This seems to be the same as the bundle path. The iPhone OS bundle
+    // structure is a lot flatter than the macOS one.
+    msg![env; this bundlePath]
+}
+- (id)resourceURL {
+    // This seems to be the same as the bundle path. The iPhone OS bundle
+    // structure is a lot flatter than the macOS one.
+    msg![env; this bundleURL]
+}
+
+- (id)executablePath {
+    let exec_path_str = env.bundle.executable_path().as_str().to_string();
+    let exec_path = from_rust_string(env, exec_path_str);
+    autorelease(env, exec_path)
+}
+- (id)executableURL {
+    // TODO: cache result
+    let exec_path: id = msg![env; this executablePath];
+    msg_class![env; NSURL fileURLWithPath:exec_path]
+}
+
+- (id)pathForResource:(id)name // NSString*
+               ofType:(id)extension // NSString*
+          inDirectory:(id)directory { // NSString*
+    assert!(name != nil); // TODO
+
+    // TODO: cache result of lookups
+
+    let path = path_for_resource_helper(env, this, name, nil, directory, extension);
+    if path != nil {
+        return path
+    }
+
+    // Try preferred languages in order of preference
+    // TODO: Support both Region-specific and Language-specific
+    // localized resources
+    let langs: id = msg_class![env; NSLocale preferredLanguages];
+    let lang_count: NSUInteger = msg![env; langs count];
+    let mut unknown_codes = HashSet::new();
+    for i in 0..lang_count {
+        let lang_code: id = msg![env; langs objectAtIndex:i];
+        let lang_code = ns_string::to_rust_string(env, lang_code); // TODO: avoid copy
+        if let Some(&(_, lprojs)) = LANG_ID_TO_LANG_PROJ.iter().find(|&&(code, _)| code == lang_code) {
+            for lproj in lprojs {
+                let lproj: id = ns_string::get_static_str(env, lproj);
+                let localized_path = path_for_resource_helper(env, this, name, lproj, directory, extension);
+                if localized_path != nil {
+                    return localized_path;
+                }
+            }
+        } else {
+            unknown_codes.insert(lang_code);
+        }
+    }
+
+    // TODO: Support look up for device specific resources, e.g. ~iphone
+
+    // As a last resort, fallback to English
+    // TODO: fallback to a development language (CFBundleDevelopmentRegion from
+    // Info.plist)
+    if !unknown_codes.is_empty() {
+        log!("TODO: language codes {:?} aren't mapped to a language name, falling back to English", unknown_codes);
+    }
+
+    for lproj in ["English.lproj", "en.lproj"] {
+        let lproj: id = ns_string::get_static_str(env, lproj);
+        let path = path_for_resource_helper(env, this, name, lproj, directory, extension);
+        if path != nil {
+            return path;
+        }
+    }
+    nil
+}
+- (id)pathForResource:(id)name // NSString*
+               ofType:(id)extension { // NSString*
+    msg![env; this pathForResource:name ofType:extension inDirectory:nil]
+}
+- (id)URLForResource:(id)name // NSString*
+       withExtension:(id)extension // NSString *
+        subdirectory:(id)subpath { // NSString *
+    let path_string: id = msg![env; this pathForResource:name
+                                                 ofType:extension
+                                            inDirectory:subpath];
+    if path_string == nil {
+        return nil;
+    }
+    let path_url: id = msg_class![env; NSURL alloc];
+    let path_url: id = msg![env; path_url initFileURLWithPath:path_string];
+    autorelease(env, path_url)
+}
+- (id)URLForResource:(id)name // NSString*
+       withExtension:(id)extension { // NSString *
+    msg![env; this URLForResource:name withExtension:extension subdirectory:nil]
+}
+
+- (id)localizedStringForKey:(id)key
+                      value:(id)value
+                      table:(id)table_name {
+    log_dbg!("localizedStringForKey key:'{}' value:'{}' table:'{}'",
+            if key == nil { std::borrow::Cow::from("(null)") } else { ns_string::to_rust_string(env, key) },
+            if value == nil { std::borrow::Cow::from("(null)") } else { ns_string::to_rust_string(env, value) },
+            if table_name == nil { std::borrow::Cow::from("(null)") } else { ns_string::to_rust_string(env, table_name) }
+    );
+    let empty_str: id = ns_string::get_static_str(env, "");
+    if key == nil {
+        if value == nil {
+            return empty_str;
+        }
+        return value;
+    }
+    let name = if table_name == nil || msg![env; table_name isEqualToString:empty_str] {
+        ns_string::get_static_str(env, "Localizable")
+    } else {
+        table_name
+    };
+    // TODO: support arbitrary bundles, not only main one
+    assert_eq!(this, env.framework_state.foundation.ns_bundle.main_bundle.unwrap());
+    let dict = if let Some(&table_dict) = env.framework_state.foundation.ns_bundle.localization_tables.get(&name) {
+        table_dict
+    } else {
+        let extension = ns_string::get_static_str(env, "strings");
+        let dict_url: id = msg![env; this URLForResource:name withExtension:extension];
+        if dict_url == nil {
+            log!("Warning: Unable to locate localization table named '{}', caching as nil", to_rust_string(env, name));
+            retain(env, name);
+            env.framework_state.foundation.ns_bundle.localization_tables.insert(name, nil);
+            nil
+        } else {
+            let dict = {
+                // First, try to load as property list format
+                let dict: id = msg_class![env; NSDictionary dictionaryWithContentsOfURL:dict_url];
+                if dict != nil {
+                    dict
+                } else {
+                    // Else, load as standard format
+                    load_strings_as_standard_format(env, dict_url)
+                }
+            };
+            retain(env, name);
+            retain(env, dict);
+            env.framework_state.foundation.ns_bundle.localization_tables.insert(name, dict);
+            dict
+        }
+    };
+    let res: id = msg![env; dict objectForKey:key];
+    if res == nil {
+        if value == nil || msg![env; value isEqualToString:empty_str] {
+            return key;
+        }
+        return value;
+    }
+    log_dbg!("localizedStringForKey res => {:?}", ns_string::to_rust_string(env, res));
+    res
+}
+
+- (id)infoDictionary {
+    let &NSBundleHostObject {
+        bundle_path,
+        info_dictionary,
+        ..
+    } = env.objc.borrow(this);
+    if let Some(dict) = info_dictionary {
+        return dict;
+    }
+
+    let plist_path = ns_string::get_static_str(env, "Info.plist");
+    let plist_path: id = msg![env; bundle_path stringByAppendingPathComponent:plist_path];
+    let dict: id = msg_class![env; NSDictionary alloc];
+    let dict: id = msg![env; dict initWithContentsOfFile:plist_path];
+    env.objc.borrow_mut::<NSBundleHostObject>(this).info_dictionary = Some(dict);
+    dict
+}
+
+- (id)objectForInfoDictionaryKey:(id)key {
+    let info_dict = msg![env; this infoDictionary];
+    // TODO: return the localized value of a key when one is available
+    msg![env; info_dict objectForKey:key]
+}
+
+- (id)localizations {
+    let localizations = CFBundleCopyBundleLocalizations(env, this);
+    autorelease(env, localizations)
+}
+
+- (id)preferredLocalizations {
+    let loc_array = CFBundleCopyBundleLocalizations(env, this);
+
+    let preferred_localizations = CFBundleCopyPreferredLocalizationsFromArray(env, loc_array);
+    autorelease(env, preferred_localizations)
+}
+
+// TODO: constructors, more accessors
+
+@end
+
+// Private static implementation of NSBundle, used for the main bundle
+// allocation. This is needed because some apps (e.g. Ovenbreak)
+// attempts to release it.
+@implementation _touchHLE_NSBundle_Static: NSBundle
+
++ (id)allocWithZone:(NSZonePtr)_zone {
+    let bundle_path = env.bundle.bundle_path().as_str().to_string();
+    let bundle_path = ns_string::from_rust_string(env, bundle_path);
+    let bundle_identifier = env.bundle.bundle_identifier().to_string();
+    let bundle_identifier = ns_string::from_rust_string(env, bundle_identifier);
+    let host_object = NSBundleHostObject {
+        bundle: None,
+        bundle_path,
+        bundle_identifier,
+        bundle_url: None,
+        info_dictionary: None,
+    };
+    env.objc.alloc_object(
+        this,
+        Box::new(host_object),
+        &mut env.mem
+    )
+}
+
+- (id) retain { this }
+- (()) release {}
+- (id) autorelease { this }
+
+@end
+
+};
+
+fn path_for_resource_helper(
+    env: &mut Environment,
+    bundle: id,
+    name: id,
+    lproj: id,
+    directory: id,
+    extension: id,
+) -> id {
+    let mut path: id = msg![env; bundle resourcePath];
+    if lproj != nil {
+        path = msg![env; path stringByAppendingPathComponent:lproj];
+    }
+    if directory != nil {
+        path = msg![env; path stringByAppendingPathComponent:directory];
+    }
+    path = msg![env; path stringByAppendingPathComponent:name];
+    if extension != nil {
+        path = msg![env; path stringByAppendingPathExtension:extension];
+    }
+    let file_manager: id = msg_class![env; NSFileManager defaultManager];
+    let file_exists: bool = msg![env; file_manager fileExistsAtPath:path];
+    if file_exists {
+        return path;
+    }
+    nil
+}
+
+/// Helper function which loads a `strings` file from an `dict_url` and parses
+/// it as standard format - one or more key-value pairs along with optional
+/// comments. Returned dictionary is autoreleased, so it's a responsibility of
+/// the caller to retain it.
+/// [String Resources reference](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html#//apple_ref/doc/uid/10000051i-CH6)
+fn load_strings_as_standard_format(env: &mut Environment, dict_url: id) -> id {
+    let res: id = msg_class![env; NSMutableDictionary new];
+    // TODO: avoid loading whole file in memory
+    let data: id = msg_class![env; NSData dataWithContentsOfURL:dict_url];
+    assert!(data != nil); // TODO
+    let length: NSUInteger = msg![env; data length];
+    assert!(length > 2);
+    let bytes: ConstVoidPtr = msg![env; data bytes];
+    let maybe_bom = env.mem.bytes_at(bytes.cast(), 2);
+    assert!(maybe_bom[0..2] != [0xFE, 0xFF] && maybe_bom[0..2] != [0xFF, 0xFE]); // TODO: UTF-16 cases
+    let strings_str = msg_class![env; NSString alloc];
+    let strings_str: id = msg![env; strings_str initWithData:data encoding:NSUTF8StringEncoding];
+    assert!(strings_str != nil); // TODO
+
+    let comment_start = ns_string::get_static_str(env, "/*");
+    let comment_end = ns_string::get_static_str(env, "*/");
+    let equal_sign = ns_string::get_static_str(env, "=");
+    let semicolon = ns_string::get_static_str(env, ";");
+
+    let null_ptr: MutPtr<id> = Ptr::null();
+
+    let scanner: id = msg_class![env; NSScanner scannerWithString:strings_str];
+    release(env, strings_str);
+    while !msg![env; scanner isAtEnd] {
+        while msg![env; scanner scanString:comment_start intoString:null_ptr] {
+            // Assume no nested comments!
+            let _: bool = msg![env; scanner scanUpToString:comment_end intoString:null_ptr];
+            let has_comment_end: bool =
+                msg![env; scanner scanString:comment_end intoString:null_ptr];
+            assert!(has_comment_end);
+            if msg![env; scanner isAtEnd] {
+                break;
+            }
+        }
+        if msg![env; scanner isAtEnd] {
+            break;
+        }
+        let key: id = scan_quoted_sanitized(env, scanner);
+
+        let _: bool = msg![env; scanner scanUpToString:equal_sign intoString:null_ptr];
+        let has_equal_sign: bool = msg![env; scanner scanString:equal_sign intoString:null_ptr];
+        assert!(has_equal_sign);
+
+        let val: id = scan_quoted_sanitized(env, scanner);
+
+        let has_semicolon: bool = msg![env; scanner scanString:semicolon intoString:null_ptr];
+        assert!(has_semicolon);
+
+        log_dbg!(
+            "Parsed strings: '{}' -> '{}'",
+            to_rust_string(env, key),
+            to_rust_string(env, val)
+        );
+        () = msg![env; res setObject:val forKey:key];
+    }
+
+    let res_imm = msg![env; res copy];
+    release(env, res);
+    autorelease(env, res_imm)
+}
+
+fn scan_quoted_sanitized(env: &mut Environment, scanner: id) -> id {
+    let quote = ns_string::get_static_str(env, "\"");
+    let null_ptr: MutPtr<id> = Ptr::null();
+    let res_ptr: MutPtr<id> = env.mem.alloc_and_write(Ptr::null());
+
+    let orig_skip_set = msg![env; scanner charactersToBeSkipped];
+    retain(env, orig_skip_set);
+
+    let has_open_quote: bool = msg![env; scanner scanString:quote intoString:null_ptr];
+    assert!(has_open_quote);
+    // Should not skip chars at the beginning!
+    () = msg![env; scanner setCharactersToBeSkipped:nil];
+    let _: bool = msg![env; scanner scanUpToString:quote intoString:res_ptr];
+    () = msg![env; scanner setCharactersToBeSkipped:orig_skip_set];
+    release(env, orig_skip_set);
+    let has_end_quote: bool = msg![env; scanner scanString:quote intoString:null_ptr];
+    assert!(has_end_quote);
+
+    let res = env.mem.read(res_ptr);
+    env.mem.free(res_ptr.cast());
+    assert!(res != nil); // TODO
+
+    // TODO: implement generic parsing approach for unquoting
+    let quoted_newline: id = ns_string::get_static_str(env, "\\n");
+    let unquoted_newline: id = ns_string::get_static_str(env, "\n");
+    let res = msg![env; res stringByReplacingOccurrencesOfString:quoted_newline withString:unquoted_newline];
+
+    let backslash = ns_string::get_static_str(env, "\\");
+    let range: NSRange = msg![env; res rangeOfString:backslash];
+    assert!(range.location == NSNotFound as NSUInteger); // TODO
+    res
+}
