@@ -29,6 +29,23 @@ Below is a complete log of all modifications made to the base touchHLE engine to
 - **The Bug**: Deeper caves (like Pirate's Cave and Underground River) would fail to load their background sprites and render black screens when generating complex room layouts.
 - **The Fix**: Modified the binary map configuration files to dynamically switch these bugged generic `Cave` archetypes to stable `Water` or `Dungeon` themes that have complete texture atlases.
 
+
+### 7. Retina Graphics Natively Enabled
+- **The Feature**: The game's native high-resolution (Retina) textures are now forced on by default within the emulator.
+- **The Fix**: Overrode the `retina` flag in the emulator options to ensure crisp, high-quality sprite rendering without manual configuration.
+
+### 8. Asset Dumping Memory Crash Fix
+- **The Bug**: The emulator would aggressively dump the new high-resolution `.png` texture atlases to disk, rapidly exhausting memory and causing hard crashes on loading screens.
+- **The Fix**: Added a filter to `ns_file_manager.rs` to intercept and quietly discard any `.png` asset extraction requests, stabilizing the memory footprint.
+
+### 9. IAP Crash Protection (UIAlertView)
+- **The Bug**: Whenever an in-app purchase was clicked (and subsequently failed), the game tried to spawn a native iOS popup warning. Since the emulator does not support iOS UI elements, this caused an immediate hard crash.
+- **The Fix**: Intercepted the initialization of `UIAlertView` in `messages.rs` to return `nil`. Now, clicking an IAP button simply does nothing instead of crashing the game.
+
+### 10. Tournament Timer Reduction (5 Seconds)
+- **The Bug**: The tournament arena required a 24-hour real-time wait between battles.
+- **The Fix**: Hex-patched the game's executable (`DragonIsland`) inside the `.ipa` to overwrite the hardcoded 24-hour floating-point constant (`86400.0`) with 5 seconds (`5.0`). The tournament now refreshes instantly.
+
 ## Setup & Usage
 
 1. Extract the contents.
