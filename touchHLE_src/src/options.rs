@@ -79,7 +79,7 @@ impl Default for Options {
             device_family: None,
             initial_orientation: DeviceOrientation::Portrait,
             scale_hack: NonZeroU32::new(1).unwrap(),
-            retina: false,
+            retina: true,
             analog_stick_tilt_controls: true,
             deadzone: 0.1,
             x_tilt_range: 60.0,
@@ -96,7 +96,7 @@ impl Default for Options {
             preferred_languages: None,
             headless: false,
             print_fps: false,
-            fps_limit: Some(60.0), // Original iPhone is 60Hz and uses v-sync,
+            fps_limit: None, // Unlocked framerate by default
             force_composition: false,
             network_access: false,
             popup_errors: true,
