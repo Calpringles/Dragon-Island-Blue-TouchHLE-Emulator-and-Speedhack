@@ -38,11 +38,7 @@ Below is a complete log of all modifications made to the base touchHLE engine to
 - **The Bug**: The emulator would aggressively dump the new high-resolution `.png` texture atlases to disk, rapidly exhausting memory and causing hard crashes on loading screens.
 - **The Fix**: Added a filter to `ns_file_manager.rs` to intercept and quietly discard any `.png` asset extraction requests, stabilizing the memory footprint.
 
-### 9. IAP Crash Protection (UIAlertView)
-- **The Bug**: Whenever an in-app purchase was clicked (and subsequently failed), the game tried to spawn a native iOS popup warning. Since the emulator does not support iOS UI elements, this caused an immediate hard crash.
-- **The Fix**: Intercepted the initialization of `UIAlertView` in `messages.rs` to return `nil`. Now, clicking an IAP button simply does nothing instead of crashing the game.
-
-### 10. Tournament Timer Reduction (5 Seconds)
+### 9. Tournament Timer Reduction (5 Seconds)
 - **The Bug**: The tournament arena required a 24-hour real-time wait between battles.
 - **The Fix**: Hex-patched the game's executable (`DragonIsland`) inside the `.ipa` to overwrite the hardcoded 24-hour floating-point constant (`86400.0`) with 5 seconds (`5.0`). The tournament now refreshes instantly.
 
