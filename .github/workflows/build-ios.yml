@@ -25,9 +25,6 @@ jobs:
       run: |
         cd touchHLE_src
         export CMAKE_TOOLCHAIN_FILE="../ios/ios_toolchain.cmake"
-        # Temporarily rename Cargo.toml bin to lib so it builds a static library
-        sed -i '' 's/\[\[bin\]\]/\[lib\]/g' Cargo.toml
-        sed -i '' 's/name = "touchHLE"/name = "touchHLE"\ncrate-type = ["staticlib"]/g' Cargo.toml
         cargo build --target aarch64-apple-ios --release
 
     - name: Generate Xcode Project
