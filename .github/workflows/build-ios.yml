@@ -1,0 +1,64 @@
+name: Build iOS
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    runs-on: macos-14
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: Install Rust target
+      run: rustup target add aarch64-apple-ios
+
+    - name: Install dependencies
+      run: |
+        brew install xcodegen cmake ninja
+
+    - name: Build touchHLE core for iOS
+      run: |
+        cd touchHLE_src
+        export CMAKE_TOOLCHAIN_FILE="../ios/ios_toolchain.cmake"
+        # Temporarily rename Cargo.toml bin to lib so it builds a static library
+        sed -i '' 's/\[\[bin\]\]/\[lib\]/g' Cargo.toml
+        sed -i '' 's/name = "touchHLE"/name = "touchHLE"\ncrate-type = ["staticlib"]/g' Cargo.toml
+        cargo build --target aarch64-apple-ios --release
+
+    - name: Generate Xcode Project
+      run: |
+        cd ios
+        xcodegen generate
+
+    - name: Build Xcode Project (Unsigned)
+      run: |
+        cd ios
+        # We build for generic iOS device (arm64) without code signing so the user can sign it themselves (e.g. via AltStore/TrollStore)
+        xcodebuild -project touchHLE.xcodeproj \
+                   -scheme touchHLE \
+                   -sdk iphoneos \
+                   -configuration Release \
+                   CODE_SIGN_IDENTITY="" \
+                   CODE_SIGNING_REQUIRED=NO \
+                   CODE_SIGNING_ALLOWED=NO \
+                   build \
+                   CONFIGURATION_BUILD_DIR="$(pwd)/build"
+
+    - name: Package IPA
+      run: |
+        cd ios/build
+        mkdir Payload
+        mv touchHLE.app Payload/
+        # Also, move the Dragon Island Blue ipa into the app's documents folder for easy access if needed, or just let user do it via Files app.
+        zip -r touchHLE_iOS.ipa Payload
+
+    - name: Upload IPA Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: touchHLE-iOS
+        path: ios/build/touchHLE_iOS.ipa

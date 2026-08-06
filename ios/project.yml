@@ -1,0 +1,34 @@
+name: touchHLE
+options:
+  bundleIdPrefix: com.touchhle
+targets:
+  touchHLE:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources:
+      - main.m
+    info:
+      path: Info.plist
+    settings:
+      LIBRARY_SEARCH_PATHS: 
+        - "$(SRCROOT)/../touchHLE_src/target/aarch64-apple-ios/release"
+        - "$(SRCROOT)/../touchHLE_src/vendor/SDL2/ios/lib"
+      OTHER_LDFLAGS:
+        - "-ltouchHLE"
+        - "-lc++"
+        - "-framework UIKit"
+        - "-framework OpenGLES"
+        - "-framework CoreGraphics"
+        - "-framework CoreAudio"
+        - "-framework AudioToolbox"
+        - "-framework AVFoundation"
+        - "-framework Metal"
+        - "-framework QuartzCore"
+        - "-framework GameController"
+        - "-framework CoreHaptics"
+      ENABLE_BITCODE: NO
+      DEAD_CODE_STRIPPING: YES
+      CODE_SIGN_IDENTITY: "Apple Development"
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: "" # Will be signed via fastlane or ad-hoc for unsigned ipa

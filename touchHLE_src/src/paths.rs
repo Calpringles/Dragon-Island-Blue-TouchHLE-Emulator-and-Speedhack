@@ -136,6 +136,10 @@ pub fn user_data_base_path() -> Cow<'static, Path> {
     }
     #[cfg(not(target_os = "android"))]
     {
+        // For iOS or other platforms passing a custom dir via environment
+        if let Ok(path) = std::env::var("TOUCHHLE_APP_DIR") {
+            return Cow::from(PathBuf::from(path));
+        }
         // When touchHLE is run from a .app bundle on macOS, the user might not
         // be able to control the current directory, so user data needs to go in
         // a standard location.
