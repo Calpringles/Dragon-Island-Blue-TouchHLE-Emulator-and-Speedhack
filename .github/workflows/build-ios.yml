@@ -2,7 +2,7 @@ name: Build iOS
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "ios-port" ]
   workflow_dispatch:
 
 jobs:
